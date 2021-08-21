@@ -412,14 +412,15 @@ span.date {
     width: 100px;
   }
   .skills-cards {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.2rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   .skills-cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     gap: 0.2rem;
   }
 
@@ -448,4 +449,16 @@ span.date {
 
 .logo-img {
   max-width: 300px;
+}
+
+@media screen and (max-width: 415px) {
+  .header-img {
+    display: none;
+  }
+
+  .header-h1 {
+    font-size: 3rem;
+    position: relative;
+    left: 0;
+  }
 }
