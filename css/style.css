@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ p {
 }
 
 .h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -60,7 +61,7 @@ p {
 
 .header {
   position: relative;
-  background-color: #fff;
+  background-color: rgb(220, 214, 214);
   height: 150px;
 }
 
@@ -80,7 +81,7 @@ p {
   display: block;
   padding-left: 5px;
   padding-top: 0;
-  color: rgb(138, 12, 150);
+  color: rgb(114, 63, 119);
 }
 
 .header-img {
@@ -111,9 +112,12 @@ p {
   margin-bottom: 0.875rem;
   color: rgb(232, 26, 247);
   position: relative;
+  background-color: whitesmoke;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
-.wrapper-h2::after {
+/* .wrapper-h2::after {
   content: "";
   width: 120px;
   height: 3px;
@@ -121,10 +125,10 @@ p {
   background-color: rgb(97, 97, 2);
   left: 0;
   bottom: -0.35rem;
-}
+} */
 
 .aside {
-  background: black;
+  background: rgb(3, 84, 233);
   color: #fff;
   padding-top: 180px;
   padding-left: 2.5rem;
@@ -151,29 +155,33 @@ p {
 
 .contact-icon {
   font-size: 2rem;
-  color: rgb(138, 12, 150);
+  color: #fff;
 }
 
 .contact-info__details {
   font-size: 1.1rem;
   color: #fff;
+  transition: 0.5s;
+}
+.contact-info__details:hover {
+  font-size: 1.08rem;
+  color: rgb(170, 163, 163);
 }
 
 .content {
-  background: rgb(28, 25, 25);
+  background: #fff;
   width: 65%;
   padding: 3rem 1rem 0 1rem;
-  color: #fff;
+  color: rgb(3, 84, 233);
   position: relative;
 }
 
 .experience-h2,
 .skills-h2 {
   padding: 5px 5px;
-  background-color: aqua;
+  background-color: rgb(3, 84, 233);
   color: #fff;
   border-radius: 5px;
-  width: 40%;
 }
 
 .expereince-item {
@@ -188,7 +196,7 @@ p {
   top: -8rem;
   width: 2px;
   height: 80%;
-  background-color: aqua;
+  background-color: rgb(232, 26, 247);
   margin-top: 12rem;
 }
 
@@ -222,16 +230,17 @@ span.date {
 
 .comp {
   font-size: 1.6rem;
+  color: rgb(114, 63, 119);
 }
 
 .experience-txt {
   font-size: 1.1rem;
-  color: rgb(240, 237, 237);
+  color: rgb(3, 84, 233);
 }
 
 .jtc {
   font-weight: 600;
-  color: #fff;
+  color: rgb(3, 84, 233);
 }
 
 .skills h3,
@@ -241,21 +250,31 @@ span.date {
 }
 
 .skills-cards {
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 80%;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0.2rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
 }
 
 .skills-card {
   padding: 10px;
   background-color: #fff;
-  max-width: 120px;
+  max-width: 100px;
   color: rgb(138, 12, 150);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 4px 5px #c5c3c3, -2px -4px 5px #c5c3c3;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.skills-card:hover {
+  transform: scale(1.1);
 }
 
 .skill-icon {
@@ -268,24 +287,26 @@ span.date {
   font-weight: 300;
 }
 
+.fled-d {
+  padding-top: 3rem;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: flex-start;
+}
+
+.education-texts,
+.references-texts {
+  box-shadow: 2px 4px 5px #c5c3c3, -2px -4px 5px #c5c3c3;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 0 30px 0 30px;
+}
+
 @media screen and (max-width: 1275px) {
-  .skills-cards {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0.2rem;
-  }
 }
 @media screen and (max-width: 1060px) {
-  .skills-cards {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.2rem;
-  }
 }
 @media screen and (max-width: 911px) {
-  .skills-cards {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0.2rem;
-  }
-
   .aside {
     padding-left: 2rem;
     padding-bottom: 1rem;
@@ -297,7 +318,7 @@ span.date {
   .h3,
   .experience-txt,
   .contact-info__details {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   p {
     letter-spacing: 0.05em;
@@ -326,10 +347,6 @@ span.date {
     flex-direction: column;
     gap: 0;
     align-items: flex-start;
-  }
-
-  .skills-card {
-    width: 70px;
   }
 }
 @media screen and (max-width: 772px) {
@@ -381,7 +398,7 @@ span.date {
   .aside {
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 0rem;
+    padding-bottom: 1rem;
   }
 
   .contact-info__list {
@@ -400,34 +417,64 @@ span.date {
     width: 100%;
     padding-bottom: 0rem;
   }
-  .references {
-    display: inline;
-  }
 
   .references h3 {
     font-size: 1rem;
   }
-
-  .skills-card {
-    width: 100px;
-  }
-  .skills-cards {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.2rem;
-  }
 }
 
 @media screen and (max-width: 550px) {
-  .skills-cards {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 0.2rem;
-  }
-
   .powered-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  .fled-d {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.major-projects .h2 {
+  background-color: #fff;
+  color: rgb(232, 26, 247);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.project-title {
+  color: rgb(114, 63, 119);
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+}
+
+.projects-list {
+  background-color: #fff;
+  margin-top: 15px;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 1px 2px 2px #c5c3c3, -1px -2px 2px #c5c3c3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-item_list {
+  padding: 4px 8px;
+  margin-left: 8px;
+  background-color: transparent;
+  display: inline-block;
+  color: blue;
+  border-radius: 10px;
+  border: 1px solid blue;
+  transition: 0.5s;
+}
+
+.project-item_list:hover {
+  background-color: blue;
+  color: #fff;
 }
 
 .footer-wrapper {
